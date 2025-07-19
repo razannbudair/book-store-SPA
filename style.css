@@ -1,0 +1,125 @@
+:root {
+  --main-color: #2c1901;
+  --light: #ffffff;
+  --hover: #b8ab95;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+body {
+  background-color: #f8f6f2;
+  color: var(--main-color);
+}
+header {
+  background-color: var(--main-color);
+  color: var(--light);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+nav a {
+  color: var(--light);
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 6px 10px;
+  border: 1px solid var(--light);
+  border-radius: 4px;
+}
+nav a:hover {
+  background-color: var(--hover);
+  color: var(--main-color);
+}
+section {
+  padding: 40px 20px;
+}
+.home-section {
+  background: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f')
+    no-repeat center/cover;
+  color: var(--light);
+  text-align: center;
+  padding: 100px 20px;
+}
+.home-section h1 {
+  font-size: 48px;
+}
+.home-section p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+.form-container,
+.signup-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 0 10px #ccc;
+}
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--main-color);
+  color: var(--light);
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--hover);
+  color: var(--main-color);
+}
+iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  border: 3px solid var(--main-color);
+  margin-top: 20px;
+}
+footer {
+  background-color: var(--main-color);
+  color: var(--light);
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+.social-links a {
+  color: var(--light);
+  margin: 0 10px;
+  text-decoration: none;
+}
+.radio-group {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .home-section h1 {
+    font-size: 36px;
+  }
+}
